@@ -26,7 +26,7 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 if read_the_docs_build:
     cwd = os.path.abspath('.')
     fake_dir = cwd + '/JOEL'
-    cd fake_dir
+    os.chdir(fake_dir)
 
 # -- General configuration ------------------------------------------------
 # import sphinx
